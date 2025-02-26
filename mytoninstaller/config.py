@@ -110,6 +110,8 @@ def CreateLocalConfig(local, initBlock, localConfigPath=defaultLocalConfigPath):
 
 
 def get_own_ip():
+	#aan2
+	return os.getenv("PUBLIC_IP")
 	pat = re.compile(r"^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$")
 	requests.packages.urllib3.util.connection.HAS_IPV6 = False
 	ip = requests.get("https://ifconfig.me/ip").text
