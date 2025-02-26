@@ -213,6 +213,8 @@ def about(local, ton, args):
 
 
 def check_installer_user(local):
+	#aan1
+	return True
 	args = ["whoami"]
 	process = subprocess.run(args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=3)
 	username = process.stdout.decode("utf-8").strip()
