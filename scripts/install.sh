@@ -12,7 +12,7 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-author="ton-blockchain"
+author="alanossov"
 repo="mytonctrl"
 branch="master"
 network="mainnet"
